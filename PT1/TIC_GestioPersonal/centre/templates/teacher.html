@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Info Professors TIC</h1>
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Cognom1</th>
+            <th>Cognom2</th>
+            <th>Correu</th>
+            <th>Curs</th>
+            <th>Tutor</th>
+            <th>Mòduls Impartits</th>
+        </tr>
+        {% for teacher in data %}
+        <tr>
+            <td>{{ teacher.nom }}</td>
+            <td>{{ teacher.cognom1 }}</td>
+            <td>{{ teacher.cognom2 }}</td>
+            <td>{{ teacher.correu }}</td>
+            <td>{{ teacher.curs }}</td>
+            <td>{{ teacher.tutor }}</td>
+            <td>{{ teacher.mòduls_impartits|join:", " }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Go Back</a>
+</body>
+</html>
