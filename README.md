@@ -11,9 +11,3 @@ Dades a mostrar prof.: nom, cognom1, cognom2, correu, curs, tutor(si s’escau),
    - Path professor: localhost:8000/centre/teachers
 
     Només la pàgina principal (del projecte) ha de renderitzar també un header. Aquest header sempre es mostrarà (independentment de si està mostrant dades de professorat o d’alumnat).
-
-### Pàgina de centre/teachers:
-![centre/teachers](TIC_GestioPersonal/centre/static/img/profes.png)
-
-### Pàgina de centre/students:
-![centre/students](TIC_GestioPersonal/centre/static/img/estu.png)
