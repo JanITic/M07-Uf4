@@ -12,7 +12,8 @@ Dades a mostrar prof.: nom, cognom1, cognom2, correu, curs, tutor(si s’escau),
 
     Només la pàgina principal (del projecte) ha de renderitzar també un header. Aquest header sempre es mostrarà (independentment de si està mostrant dades de professorat o d’alumnat).
 
-# BASES DE DADES
+# PRÀCTICA 2 - CRUD
+## BASES DE DADES
 
 Trieu el tipus de bases de dades que vulgueu utilitzar en aquesta pràctica.  
 Haureu de crear una bases de dades amb el nom `iticBCN`.  
@@ -26,7 +27,7 @@ Fer servir mínim una taula relacional per gestionar els rols i relacionar-ho am
 - **Taula rol**: id, nom.  
   - Ex: 1, professor
 
-# CRUD
+## CRUD
 
 A partir de la pràctica anterior on feiem servir fakedata, haurem de fer els canvis necessaris per crear un CRUD de professors i estudiants que utilitzi les bases de dades definida en l’apartat anterior.
 
