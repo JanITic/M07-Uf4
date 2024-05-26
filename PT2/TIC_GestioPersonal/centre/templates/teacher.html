@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Teachers{% endblock %}
+
+{% block content %}
+<h1 class="my-4">Teachers</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Cognom</th>
+            <th>Assignatures</th>
+            <th>Rol</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for teacher in data %}
+        <tr>
+            <td>{{ teacher.nom }}</td>
+            <td>{{ teacher.cognom }}</td>
+            <td>{{ teacher.assignatures }}</td>
+            <td>{{ teacher.rol.nom }}</td>
+            <td>
+                <a href="{% url 'update_usuari' teacher.id %}" class="btn btn-warning btn-sm">Edit</a>
+                <a href="{% url 'delete_usuari' teacher.id %}" class="btn btn-danger btn-sm">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<a href="{% url 'index' %}" class="btn btn-secondary">Back to Index</a>
+{% endblock %}
